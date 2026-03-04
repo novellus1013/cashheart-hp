@@ -1,12 +1,21 @@
 import type { Metadata } from "next"
 import { PolicyLayout } from "@/components/policy-layout"
+import { headers } from "next/headers"
+import { getEmailUrl } from "@/lib/utils"
 
 export const metadata: Metadata = {
   title: "이용 약관 - CashHeart",
   description: "CashHeart 앱의 이용 약관입니다.",
 }
 
-export default function TermsPage() {
+export default async function TermsPage() {
+  const headersList = await headers()
+  const acceptLanguage = headersList.get("accept-language") ?? "en"
+  const locale = acceptLanguage.startsWith("ko") ? "ko" : "en"
+
+  const supportEmailUrl = getEmailUrl("support", "CashHeart", locale)
+
+
   return (
     <PolicyLayout title="이용 약관 (Terms & Conditions)">
       <div className="space-y-8 text-muted-foreground leading-relaxed">
@@ -90,7 +99,11 @@ export default function TermsPage() {
         <section>
           <h2 className="mb-4 text-xl font-semibold text-foreground">문의</h2>
           <p>
-            이용 약관에 대해 질문이나 제안 사항이 있는 경우, <a href="mailto:noveluslab@proton.me" className="text-primary hover:underline">noveluslab@proton.me</a>로 서비스 제공자에게 주저하지 마시고 연락해 주십시오.
+            이용 약관에 대해 질문이나 제안 사항이 있는 경우,{" "}
+            <a href={supportEmailUrl} className="text-primary hover:underline">
+              support@novelus.dev
+            </a>
+            로 서비스 제공자에게 주저하지 마시고 연락해 주십시오.
           </p>
           <p className="mt-4 text-sm">
             본 이용 약관 페이지는 App Privacy Policy Generator에 의해 생성되었습니다.

@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+const CONTACT_EMAIL = "contact@novelus.dev"
+
 export function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
@@ -12,10 +14,10 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               문의:{" "}
               <a
-                href="mailto:noveluslab@proton.me"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="text-primary hover:underline"
               >
-                noveluslab@proton.me
+                {CONTACT_EMAIL}
               </a>
             </p>
           </div>
@@ -35,6 +37,6 @@ export function Footer() {
           </nav>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
