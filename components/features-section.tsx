@@ -1,4 +1,4 @@
-import { Home, Users, Calculator, Plus, BarChart3, Smartphone } from "lucide-react"
+import { Home, Users, Scale, Calculator, Plus, BarChart3, FileDown, Smartphone, Moon } from "lucide-react"
 
 const features = [
   {
@@ -12,6 +12,12 @@ const features = [
     title: "지인 카테고리 & 필터",
     description:
       "지인을 카테고리로 나누어 관리하고, 필터를 통해 원하는 사람만 골라서 볼 수 있습니다.",
+  },
+  {
+    icon: Scale,
+    title: "관계별로 오고 간 정 확인",
+    description:
+      "사람마다 받은 마음과 보낸 마음이 어느 쪽으로 얼마나 기울어 있는지 관찰자 시점으로 보여드려요.",
   },
   {
     icon: Calculator,
@@ -29,13 +35,23 @@ const features = [
     icon: BarChart3,
     title: "통계로 한 번 더 정리",
     description:
-      "최근 6개월 거래 흐름을 그래프로 확인하고, 카테고리별 분석과 Top 지인 목록을 볼 수 있습니다.",
+      "최근 6개월 거래 흐름과 카테고리별 분포는 물론, 경조사가 몰리는 시기와 작년 같은 기간과의 비교까지 확인할 수 있어요.",
+  },
+  {
+    icon: FileDown,
+    title: "기록은 CSV로 내보내기",
+    description: "쌓인 기록을 CSV로 내보내 엑셀 등에서 다시 활용할 수 있습니다.",
   },
   {
     icon: Smartphone,
     title: "로컬 저장 기반",
     description:
       "모든 데이터를 사용자의 기기에만 저장합니다. 인터넷 없이도 기록을 열람하고 추가할 수 있습니다.",
+  },
+  {
+    icon: Moon,
+    title: "다크모드 지원",
+    description: "화면 테마를 자동 · 라이트 · 다크 중에서 선택할 수 있어요.",
   },
 ]
 

@@ -6,6 +6,7 @@ const targetUsers = [
   "사람별로 내역을 따로 정리하고 싶은 분",
   "카테고리별로 깔끔하게 분류해서 보고 싶은 분",
   "간단한 조작으로 오래 보관되는 기록 앱을 찾는 분",
+  "관계의 흐름이나 균형을 함께 보고 싶은 분",
 ]
 
 export function TargetUsersSection() {
@@ -34,7 +35,7 @@ export function TargetUsersSection() {
                 <p className="mb-2 text-6xl font-bold text-primary">100%</p>
                 <p className="text-lg font-medium text-foreground">로컬 저장</p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  외부 서버 전송 없이
+                  오류 발생 시에만 진단 정보 전송
                   <br />
                   내 기기에만 안전하게 보관
                 </p>

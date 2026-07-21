@@ -84,7 +84,7 @@ export default async function PrivacyPage() {
         <section>
           <h2 className="mb-4 text-xl font-semibold text-foreground">데이터 보존 정책</h2>
           <p>
-            서비스 제공자는 귀하가 애플리케이션을 사용하는 동안 그리고 그 이후 합리적인 기간 동안 사용자 제공 데이터를 보존합니다. 귀하가 애플리케이션을 통해 제공한 사용자 제공 데이터를 삭제하기를 원하는 경우, <a href="mailto:noveluslab@proton.me" className="text-primary hover:underline">noveluslab@proton.me</a>로 연락 주시면 합리적인 기간 내에 응답할 것입니다.
+            서비스 제공자는 귀하가 애플리케이션을 사용하는 동안 그리고 그 이후 합리적인 기간 동안 사용자 제공 데이터를 보존합니다. 귀하가 애플리케이션을 통해 제공한 사용자 제공 데이터를 삭제하기를 원하는 경우, <a href="mailto:support@novelus.dev" className="text-primary hover:underline">support@novelus.dev</a>로 연락 주시면 합리적인 기간 내에 응답할 것입니다.
           </p>
         </section>
 
@@ -97,7 +97,7 @@ export default async function PrivacyPage() {
             애플리케이션은 13세 미만의 이용자를 대상으로 하지 않습니다. 서비스 제공자는 13세 미만 아동의 개인 식별 정보를 고의로 수집하지 않습니다. 서비스 제공자가 13세 미만 아동이 개인 정보를 제공했음을 발견하는 경우, 서비스 제공자는 즉시 해당 정보를 서버에서 삭제할 것입니다.
           </p>
           <p>
-            귀하가 부모 또는 보호자이며 귀하의 자녀가 당사에 개인 정보를 제공했음을 알고 있는 경우, 서비스 제공자(<a href="mailto:noveluslab@proton.me" className="text-primary hover:underline">noveluslab@proton.me</a>)에게 연락하여 필요한 조치를 취할 수 있도록 알려주시기 바랍니다.
+            귀하가 부모 또는 보호자이며 귀하의 자녀가 당사에 개인 정보를 제공했음을 알고 있는 경우, 서비스 제공자(<a href="mailto:support@novelus.dev" className="text-primary hover:underline">support@novelus.dev</a>)에게 연락하여 필요한 조치를 취할 수 있도록 알려주시기 바랍니다.
           </p>
         </section>
 

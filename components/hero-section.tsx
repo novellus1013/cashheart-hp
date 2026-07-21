@@ -49,7 +49,7 @@ export function HeroSection() {
                   src="/images/home.png"
                   alt="CashHeart 앱 홈 화면"
                   width={220}
-                  height={440}
+                  height={477}
                   className="h-auto w-[160px] md:w-[200px]"
                   priority
                 />
@@ -60,7 +60,7 @@ export function HeroSection() {
                   src="/images/detail.png"
                   alt="CashHeart 지인과의 거래 내역"
                   width={260}
-                  height={520}
+                  height={564}
                   className="h-auto w-[180px] md:w-[240px]"
                   priority
                 />
@@ -71,7 +71,7 @@ export function HeroSection() {
                   src="/images/report.png"
                   alt="CashHeart 앱 통계 화면"
                   width={220}
-                  height={440}
+                  height={477}
                   className="h-auto w-[160px] md:w-[200px]"
                   priority
                 />

@@ -9,7 +9,7 @@ type EmailType = "support" | "contact"
 
 const EMAIL_MAP: Record<EmailType, string> = {
   support: "support@novelus.dev",
-  contact: "contact@novelus.dev",
+  contact: "support@novelus.dev",
 }
 
 export function getEmailUrl(type: "support" | "contact", appName: string, locale: string): string {

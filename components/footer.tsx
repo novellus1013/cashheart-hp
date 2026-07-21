@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const CONTACT_EMAIL = "contact@novelus.dev"
+const CONTACT_EMAIL = "support@novelus.dev"
 
 export function Footer() {
   return (
@@ -22,6 +22,12 @@ export function Footer() {
             </p>
           </div>
           <nav className="flex gap-4">
+            <Link
+              href="/updates"
+              className="text-sm text-muted-foreground hover:text-foreground hover:underline"
+            >
+              업데이트 내역
+            </Link>
             <Link
               href="/privacy"
               className="text-sm text-muted-foreground hover:text-foreground hover:underline"
